@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from channels import Group
+from django.http import HttpResponse
 
-# Create your views here.
+
+def publish(request):
+    msg = request.GET.get('msg', 'null')
+    Group('nyanpasu').send({'text': msg})
+
+    return HttpResponse('Published!')
