@@ -9,8 +9,8 @@ flake8 = "*"
 rope = "*"
 
 [packages]
-django = "==2.2.13"
-channels = "==1.1.8"
+django = "~=2.2.13"
+channels = "~=1.1.8"
 docutils = "*"
 django-heroku = "*"
 
