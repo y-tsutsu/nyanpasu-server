@@ -15,10 +15,10 @@ docutils = "*"
 django-heroku = "*"
 
 [requires]
-python_version = "3.8"
+python_version = "3.9"
 
 [scripts]
 start = "python manage.py runserver"
-test = "python -m unittest discover -v"
+test = "wscat -c ws://localhost:8000/ws"
 format = "autopep8 -ivr ."
 lint = "flake8 --show-source ."
