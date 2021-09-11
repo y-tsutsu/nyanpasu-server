@@ -13,6 +13,7 @@ django = "~=2.2.13"
 channels = "~=1.1.8"
 docutils = "*"
 django-heroku = "*"
+psycopg2 = "~=2.8.6"
 
 [requires]
 python_version = "3.9"
